@@ -1,5 +1,5 @@
 {
-  "name": "grapho",
+  "name": "@satendraraghav/grapho",
   "version": "0.1.0",
   "private": true,
   "main": "dist/index.cjs.js",
@@ -52,5 +52,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "@visx/visx": "^2.16.0"
-  }
+  },
+  "description": "This Project is a private library for all type Graphs based on React Component .",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

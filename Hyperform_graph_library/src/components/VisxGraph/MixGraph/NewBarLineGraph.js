@@ -12,7 +12,8 @@ import {
 
 const NewBarLineGraph = ({ value, parentWidth, parentHeight, parentLeft, parentTop }) => {
   let data = value.data;
-  const arr = (value.content.xAxisValue && value.content.yAxisValue) ? [xAxisValue, yAxisValue] : Object.keys(data[0]);
+  const arr = (value.content.xAxisValue && value.content.yAxisValue) ? [value.content.xAxisValue, value.content.yAxisValue] : Object.keys(data[0]);
+  console.log(arr[0])
   const accessors = { xAccessor: (d) => d[arr[0]], yAccessor: (d) => d[arr[1]] };
 
   const { containerRef } = useTooltipInPortal({

@@ -9,7 +9,7 @@ import { localPoint } from "@visx/event";
 
 const DrawBarGraph = ({ value, parentWidth, parentHeight, parentLeft, parentTop }) => {
   const data = value.data;
-  const arr = (value.content.xAxisValue && value.content.yAxisValue) ? [xAxisValue, yAxisValue] : Object.keys(data[0]);
+  const arr = (value.content.xAxisValue && value.content.yAxisValue) ? [value.content.xAxisValue, value.content.yAxisValue] : Object.keys(data[0]);
   const {
     tooltipData,
     tooltipLeft,

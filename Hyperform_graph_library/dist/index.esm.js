@@ -125,7 +125,7 @@ var DrawBarGraph = function DrawBarGraph(_ref) {
     parentLeft = _ref.parentLeft,
     parentTop = _ref.parentTop;
   var data = value.data;
-  var arr = value.content.xAxisValue && value.content.yAxisValue ? [xAxisValue, yAxisValue] : Object.keys(data[0]);
+  var arr = value.content.xAxisValue && value.content.yAxisValue ? [value.content.xAxisValue, value.content.yAxisValue] : Object.keys(data[0]);
   var _useTooltip = useTooltip(),
     tooltipData = _useTooltip.tooltipData,
     tooltipLeft = _useTooltip.tooltipLeft,
@@ -255,7 +255,7 @@ var BarGraph = function BarGraph(_ref) {
 var DrawGraph = function DrawGraph(_ref) {
   var value = _ref.value;
   var data = value.data;
-  var arr = value.content.xAxisValue && value.content.yAxisValue ? [xAxisValue, yAxisValue] : Object.keys(data[0][0]);
+  var arr = value.content.xAxisValue && value.content.yAxisValue ? [value.content.xAxisValue, value.content.yAxisValue] : Object.keys(data[0][0]);
   var accessors = {
     xAccessor: function xAccessor(d) {
       return d[arr[0]];
@@ -444,7 +444,8 @@ var NewBarLineGraph = function NewBarLineGraph(_ref) {
     parentLeft = _ref.parentLeft,
     parentTop = _ref.parentTop;
   var data = value.data;
-  var arr = value.content.xAxisValue && value.content.yAxisValue ? [xAxisValue, yAxisValue] : Object.keys(data[0]);
+  var arr = value.content.xAxisValue && value.content.yAxisValue ? [value.content.xAxisValue, value.content.yAxisValue] : Object.keys(data[0]);
+  console.log(arr[0]);
   var accessors = {
     xAccessor: function xAccessor(d) {
       return d[arr[0]];
