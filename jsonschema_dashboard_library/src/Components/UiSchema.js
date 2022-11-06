@@ -1,8 +1,8 @@
-import { Product1 } from './Trail';
-import { Product2 } from './Trail';
-import { Product3 } from './Trail';
-import { value } from './Trail';
-import { imgValueObj } from './Trail';
+import { Product1 } from './DemoData';
+import { Product2 } from './DemoData';
+import { Product3 } from './DemoData';
+import { value } from './DemoData';
+import { imgValueObj } from './DemoData';
 
 const value2 = JSON.stringify(value);
 const imgValue = JSON.stringify(imgValueObj);

@@ -3,8 +3,8 @@ import "./App.css";
 import validator from "@rjsf/validator-ajv8";
 import Form from "@rjsf/core";
 import { Graph } from '@act21_products/grapho';
-import { ui } from './Ui';
-import { schema } from './Ui';
+import { ui } from './Components/UiSchema';
+import { schema } from './Components/UiSchema';
 
 const MyCustomWidget = (props) => {
   const { options } = props;
