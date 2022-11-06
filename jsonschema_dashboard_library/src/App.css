@@ -1,0 +1,46 @@
+.new{
+  height:100px;
+  color:white;
+  background: linear-gradient(to right,#ec2294c7,rgba(217, 77, 182, 0.587),rgb(210, 9, 157));
+}.App{
+  background-color: rgba(237, 222, 222, 0.894);
+  padding: 50px;
+  border-radius: 10px;
+}
+.round_field input, select {
+  background-color: "black";
+ width:98%;
+ color:rgb(94, 136, 142);
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 10px;
+ border-radius: 10px;
+  padding:10px;
+  margin-bottom:15px
+}
+.round_field input:focus, select:focus{
+ border:none;
+ outline: 2px solid tomato;
+ background-color: rgb(160, 177, 209);
+ color:black;
+}
+form label{
+ padding-bottom: 20px;
+}
+.submit{
+  background-color: rgb(17, 100, 17);
+  width:98%;
+  color:white;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+   /* margin-left: 50px; */
+   padding:10px;
+   margin-bottom:15px
+}
+.submit:hover{
+  background-color:rgb(17, 150, 17);
+  font-size: 1.2rem;
+}
