@@ -1,9 +1,22 @@
 import { letterFrequency } from "@visx/mock-data";
-
-
-
+export const buttonData = {
+  content:"Click me",
+  id:"button",
+  eventHandler:"click",
+  handlerWork:"width",
+  handlerValue:"60px",
+  style:{
+    padding:"5px 10px",
+    width:"80%",
+    borderRadius:"10px",
+    backgroundColor:"tomato",
+    color:"white",
+    marginLeft:"auto",
+    marginRight:"auto",
+  }
+}
   export const value = {
-    type: "Mixgraph",
+    type: "Bargraph",
     data: letterFrequency,
     content: {
       header: "Line Graph Dynamic",
@@ -17,7 +30,7 @@ import { letterFrequency } from "@visx/mock-data";
     },
     style: {
       containerStyle: {
-        background: "linear-gradient(to left,#F1FFAD,#BEADFF)", width: "100%", height: "400px",
+        background: "linear-gradient(to left,#F1FFAD,#BEADFF)", width: "100%", height: "400",
         borderRadius: "20px", padding: "10px 0 2px 0"
       },
       headerStyle: { textAlign: "center", padding: "5px 0 15px 0" },
@@ -51,11 +64,16 @@ import { letterFrequency } from "@visx/mock-data";
   export const imgValueObj = {
     src:"https://th.bing.com/th/id/OIP.RiNmH5AIoZwVGvB835DNuAHaE8?pid=ImgDet&rs=1",
     alt:"Default-image",
+    button:{
+      content: "Act21-Advance Computing",
+      func:'function(){return window.alert("act-21t6udl")}',
+   },
     style:{
       width:"100%",
       height:"600px",
       borderRadius:"2px solid gray",
-      borderRadius:"10px"
+      borderRadius:"10px",
+      backgroundColor:"green"
     }
   } 
   export const Product1 = [

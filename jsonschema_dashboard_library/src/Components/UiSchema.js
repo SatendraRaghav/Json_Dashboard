@@ -3,7 +3,9 @@ import { Product2 } from './DemoData';
 import { Product3 } from './DemoData';
 import { value } from './DemoData';
 import { imgValueObj } from './DemoData';
+import { buttonData } from './DemoData';
 
+const buttonDataJSON = JSON.stringify(buttonData)
 const value2 = JSON.stringify(value);
 const imgValue = JSON.stringify(imgValueObj);
 
@@ -12,15 +14,17 @@ export const schema = {
     type: "object",
     required: ["title"],
     properties: {
+      btn:{type:"string"},
       myCustomWidget: { type: "string" },
       img:{type:"string"},
       fName: { type: "string", title: "Your First Name", default: "Satendra" },
       lName: { type: "string", title: "Your Last Name", default: "Raghav" },
+  
       password: { type: "string", title: "Fill Your Password", minLength: 3 }, 
       department: { type: "string", title: "Department-Telephone Number" },
       showWoek: { type: "string", format: "data-url", title: "Upload your work" },
       date: { type: "string", title: "Your Task Date" },
-      title1: { type: "string", enum: ["kotak", "hjyperform", "Mama"], title: "Add Your Task", default: "A new task" },
+      // title1: { type: "string", enum: ["kotak", "hjyperform", "Mama"], title: "Add Your Task", default: "A new task" },
       done: {
         type: "boolean",
         title: "Please recheck your details it will be not change once it submitted, Are you check it ?",
@@ -32,6 +36,12 @@ export const schema = {
   
   };
 export const ui = {
+  "btn":{
+    "ui:widget": "customButton",
+    "ui:options": {
+      value: buttonDataJSON,
+      }
+    },
     "myCustomWidget": {
       "ui:widget": "myCustomWidgetGraph",
       "ui:options": {
@@ -45,9 +55,9 @@ export const ui = {
         } 
     },
    
-    "title1": {
-      "ui:classNames": "round_field"
-    },
+    // "title1": {
+    //   "ui:classNames": "round_field"
+    // },
     "done": {
       "ui:widget": "checkbox",
       "ui:classNames": "round_field"
@@ -80,6 +90,7 @@ export const ui = {
           2030
         ]
       },
+
       "ui:classNames": "round_field"
     },
     "department": {

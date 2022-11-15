@@ -26,10 +26,8 @@ const FormPage = () => {
         apiCall()
     },[])
     const func = (tempName,props) => {
-        console.log(`${tempName}  newfunc`)
         changeHandler(tempName,props.formContext.formData,props);
         setFormData(props.formContext.formData);
-        console.log(props.formContext.data)
     }  
 const newHandler = ({formData})=>{
     setFormData(formData)

@@ -10,20 +10,6 @@
     "ui:widget": "radio",
     "ui:placeholder":"Enter your Last Name"
   },
-  "div": {
-    "ui:widget": "CustomDiv",
-    "ui:options": {
-      "value":{
-     "style":{
-      "backgroundColor":"gray",
-      "width":"90%",
-      "margin":"130px auto",
-       "color":"white",
-       "padding":"10px 0",
-       "textAlign":"center"
-      }}
-    }
-  },
   "ui:submitButtonOptions": {
     "props": {
       "disabled": true,
