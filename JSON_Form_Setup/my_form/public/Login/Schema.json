@@ -1,0 +1,9 @@
+{
+ "type": "object",
+  "properties": {
+     "header": { "type": "string","title":" "},
+     "userName": { "type": "string" ,"title":"Enter your email :"},
+     "password": { "type": "string","title":"Password :"}
+  }
+}
+

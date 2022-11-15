@@ -1,0 +1,45 @@
+{ 
+  "header": {
+    "ui:widget": "CustomLabel",
+    "ui:options": {
+      "value":{
+      "content":"Login Form ",
+     "style":{
+      "backgroundColor":"yellowGreen",
+      "width":"100%",
+       "color":"white",
+       "textAlign":"center",
+       "paddingTop":"10px",
+       "paddingBottom":"10px",
+       "borderRadius":"5px",
+        "marginTop":"15px",
+        "marginBottom":"50px"
+      }}
+    }
+  },
+  "userName":{
+    "ui:widget": "email",
+    "ui:placeholder":"Enter your Email ID"
+
+  },
+  "password": {
+    "ui:widget": "password",
+    "ui:placeholder":"Make it strong..!!",
+    "ui:options": {
+      "value":{
+     "style":{
+      "backgroundColor":"gray",
+      "width":"90%",
+       "color":"white"
+      }}
+    }
+  },
+  "ui:submitButtonOptions": {
+    "props": {
+      "disabled": false,
+      "className": "submit"
+    },
+    "norender": false,
+    "submitText": "Submit Data"
+  }
+}

@@ -1,0 +1,51 @@
+{ 
+  
+  "fName":{
+    "ui:placeholder":"Enter your First Name"
+  },
+  "lName":{
+    "ui:placeholder":"Enter your Last Name"
+  },
+  "gender":{
+    "ui:widget": "radio",
+    "ui:placeholder":"Enter your Last Name"
+  },
+  "div": {
+    "ui:widget": "CustomDiv",
+    "ui:options": {
+      "value":{
+     "style":{
+      "backgroundColor":"gray",
+      "width":"90%",
+      "margin":"130px auto",
+       "color":"white",
+       "padding":"10px 0",
+       "textAlign":"center"
+      }}
+    }
+  },
+  "ui:submitButtonOptions": {
+    "props": {
+      "disabled": true,
+      "className": "submit"
+    },
+    "norender": true,
+    "submitText": "Submit Data"
+  },
+  "submitButton": {
+    "ui:widget": "CustomButton",
+    "ui:options": {
+      "value":{
+     "content":"Sign Up",
+     "eventName":"signUp",
+     "style":{
+      "backgroundColor":"tomato",
+      "padding":"7px 0",
+     "borderRadius":"8px",
+      "width":"100%",
+      "margin":"50px auto",
+       "color":"white"
+      }}
+    }
+  }
+}
