@@ -4,9 +4,10 @@ import validator from "@rjsf/validator-ajv8";
 import { widgets } from './components/CustomWidgets/CustomWidjets';
 import axios from 'axios';
 import { changeHandler } from './components/LogicHandler/Logic';
+import { submitHandler } from './components/LogicHandler/Submit';
 
 const FormPage = () => {
-    const [formData, setFormData] = useState("")
+    const [formData, setFormData] = useState({email:"",password:""})
     const [schema, setSchema] = useState({})
     const [UiSchema, setUiSchema] = useState({})
     useEffect(() => {
@@ -28,21 +29,21 @@ const FormPage = () => {
     const func = (tempName,props) => {
         changeHandler(tempName,props.formContext.formData,props);
         setFormData(props.formContext.formData);
-    }  
-const newHandler = ({formData})=>{
-    setFormData(formData)
-}
-
+    } 
+    const tempChangeHandler = ({formData})=>{
+        setFormData(formData)
+    } 
     return (
         <div>
             <Form
                 validator={validator}
                 schema={schema}
                 formData={formData}
-                onChange={(e)=>newHandler(e)}
                 widgets={widgets}
                 uiSchema={UiSchema}
-                formContext={{ handler: func,formData:formData }}
+                onChange={(e)=>tempChangeHandler(e)}
+                formContext={{ handler: func,formData:formData,tempChange:tempChangeHandler,homeRender:false }}
+                onSubmit={(e)=>submitHandler(e)}
             />
         </div>
     )

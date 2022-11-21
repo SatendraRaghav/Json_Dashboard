@@ -12,11 +12,9 @@
   },
   "ui:submitButtonOptions": {
     "props": {
-      "disabled": true,
-      "className": "submit"
+      "disabled": true
     },
-    "norender": true,
-    "submitText": "Submit Data"
+    "norender": true
   },
   "submitButton": {
     "ui:widget": "CustomButton",

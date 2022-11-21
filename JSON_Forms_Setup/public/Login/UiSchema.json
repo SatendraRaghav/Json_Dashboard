@@ -3,35 +3,65 @@
     "ui:widget": "CustomLabel",
     "ui:options": {
       "value":{
-      "content":"Login Form ",
-     "style":{
-      "backgroundColor":"yellowGreen",
-      "width":"100%",
-       "color":"white",
-       "textAlign":"center",
-       "paddingTop":"10px",
-       "paddingBottom":"10px",
-       "borderRadius":"5px",
-        "marginTop":"15px",
-        "marginBottom":"50px"
-      }}
+      "content":{
+        "heading":"Act21",
+        "buttonContent":"Login",
+        "buttonType":"submit"
+      }
     }
-  },
-  "userName":{
-    "ui:widget": "email",
-    "ui:placeholder":"Enter your Email ID"
-
-  },
-  "password": {
-    "ui:widget": "password",
-    "ui:placeholder":"Make it strong..!!",
+  }},
+  "email": {
+    "ui:widget": "CustomTextbox",
     "ui:options": {
       "value":{
+     "content":{
+      "label":"Enter your username",
+      "required":true,
+      "type":"text"
+    },
      "style":{
-      "backgroundColor":"gray",
-      "width":"90%",
-       "color":"white"
-      }}
+      "width":"55%",
+      "display":"block",
+      "padding":"12px 0",
+      "margin":"25px auto",
+      "borderRadius":"10px"
+      }
+  }}
+  },
+  "password": {
+    "ui:widget": "CustomTextbox",
+    "ui:placeholder": "Enter your password",
+    "ui:options": {
+      "value":{
+     "content":{
+      "label":"Enter your password",
+      "required":true,
+      "type":"password"
+    },
+     "style":{
+      "width":"55%",
+      "display":"block",
+      "padding":"12px 0",
+      "margin":"25px auto",
+      "borderRadius":"10px"
+      }
+  }}
+  },
+  "submitButton": {
+    "ui:widget": "CustomButton",
+    "ui:options": {
+      "value":{
+     "content":"Login",
+     "eventName":"submitForm",
+     "type":"submit",
+     "style":{
+      "style":{
+      "width":"55%",
+      "display":"block",
+      "padding":"12px 0",
+      "margin":"25px auto",
+      "borderRadius":"10px"
+      }}}
     }
   },
   "ui:submitButtonOptions": {
@@ -39,7 +69,8 @@
       "disabled": false,
       "className": "submit"
     },
-    "norender": false,
+    "norender": true,
     "submitText": "Submit Data"
   }
+
 }

@@ -3,7 +3,6 @@
      "properties": {
         "fName": { "type": "string","title":"Your First Name" },
         "lName":{"type":"string","title":"Your Lat Name"},
-        "Gender":{"type":"boolean","title":"Please check your credientals carefully, it's can not be edit once submit."},
-        "submitButton":{"type":"string","title":" "}
+        "Gender":{"type":"boolean","title":"Please check your credientals carefully, it's can not be edit once submit."}
      }
    }
