@@ -1,0 +1,113 @@
+{
+    "type": "HorizontalLayout",
+        "elements": [
+        {
+            "type": "Control",
+            "scope": "#/properties/Appbar",
+            "layout":{"xs":12,"sm":12,"md":12,"lg":12},
+            "option": {
+                "value": {
+                    "content": {
+                        "eventName": "submitForm"
+                    }}
+        }},
+                {
+                    "type": "Control",
+                    "scope": "#/properties/submitButton",
+                    "layout":{"xs":3,"sm":3,"md":2,"lg":2},
+                    "option": {
+                        "value": {
+                            "content": {
+                                "name": "Approve",
+                                "variant": "contained",
+                                "color": "success",
+                                "eventName": " ",
+                                "type": " ",
+                                "size": "small"
+                            },
+                            "style":{
+                                "width":"100%"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "Control",
+                    "scope": "#/properties/submitButton",
+                    "layout":{"xs":3,"sm":3,"md":2,"lg":2},
+                    "option": {
+                        "value": {
+                            "content": {
+                                "name": "Pending",
+                                "variant": "contained",
+                                "color": "warning",
+                                "eventName": " ",
+                                "type": " ",
+                                "size": "small"
+                            },
+                            "style":{
+                                "width":"100%"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "Control",
+                    "scope": "#/properties/submitButton",
+                    "layout":{"xs":2,"sm":2,"md":2,"lg":2},
+                    "option": {
+                        "value": {
+                            "content": {
+                                "name": "Reject",
+                                "variant": "contained",
+                                "color": "error",
+                                "eventName": " ",
+                                "type": " ",
+                                "size": "small"
+                            },
+                            "style":{
+                                "width":"100%"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "Control",
+                    "scope": "#/properties/EmptyBox",
+                    "layout":{"xs":0,"sm":0,"md":2,"lg":2}
+                 
+                    
+                },
+                {
+                    "type": "Control",
+                    "scope": "#/properties/submitButton",
+                    "layout":{"xs":3,"sm":3,"md":4,"lg":4},
+                    "option": {
+                        "value": {
+                            "content": {
+                                "name": "Coloumn",
+                                "variant": "contained",
+                                "color": "info",
+                                "eventName": " ",
+                                "type": "text",
+                                "size": "medium"
+                            },
+                            "style":{
+                                "width":"100%"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "Control",
+                    "scope": "#/properties/firstName",
+                    "layout":{"xs":5,"sm":5,"md":5,"lg":5}
+                },
+                {
+                    "type": "Control",
+                    "scope": "#/properties/lastName",
+                    "layout":{"xs":5,"sm":5,"md":5,"lg":5}
+              
+                }
+    ]
+}

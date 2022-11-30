@@ -1,0 +1,23 @@
+{
+    "type": "object",
+     "properties": {
+      "header": {
+         "type": "string"
+       },
+      "firstName":{
+         "type": "string",
+         "description":"Please enter your fisrt name",
+         "title":"Your First Name"
+      },
+      "lastName":{
+         "type": "string",
+         "description":"Please enter your fisrt name",
+         "title":"Your Last Name"
+      },
+      "select":{
+         "type": "string",
+         "description":"Please enter your fisrt name",
+         "title":"Your Last Name"
+      }
+      }
+   }

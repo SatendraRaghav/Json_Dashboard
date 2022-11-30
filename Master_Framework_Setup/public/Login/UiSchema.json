@@ -1,0 +1,79 @@
+{
+    "type": "HorizontalLayout",
+    "elements": [
+        {
+            "type": "Control",
+            "scope": "#/properties/Appbar",
+            "layout":{"xs":12,"sm":12,"md":12,"lg":12},
+            "option": {
+                "value": {
+                    "content": {
+                        "eventName": "submitForm"
+                    }}
+        }},
+        {
+            "type": "Control",
+            "scope": "#/properties/email",
+            "layout":{"xs":12,"sm":12,"md":12,"lg":12},
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Enter your username",
+                        "required": true,
+                        "type": "text",
+                        "variant": "standard",
+                        "size":"normal",
+                       "helperText":""
+                    },
+                    "style": {
+                        "width":"50%",
+                        "textAlign":"center",
+                         "margin":"10px auto"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/password",
+            "layout":{"xs":12,"sm":12,"md":12,"lg":12},
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Enter your password",
+                        "required": true,
+                        "type": "password",
+                        "variant": "standard",
+                        "size":"normal",
+                       "helperText":""
+                    },
+                    "style": {
+                        "width":"50%",
+                        "textAlign":"center",
+                         "margin":"10px auto"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/submitButton",
+            "layout":{"xs":3,"sm":3,"md":4,"lg":4},
+            "option": {
+                "value": {
+                    "content": {
+                        "name": "Log In",
+                        "variant": "contained",
+                        "color": "info",
+                        "eventName": "submitForm",
+                        "type": "text",
+                        "size": "medium"
+                    },
+                    "style":{
+                        "width":"100%"
+                    }
+                }
+            }
+        }
+    ]
+}

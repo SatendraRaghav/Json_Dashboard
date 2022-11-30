@@ -1,0 +1,19 @@
+{
+    "type": "object",
+     "properties": {
+      "header": {
+         "type": "string"
+       },
+        "Email": {
+           "type": "string",
+           "description": "Please enter user name"
+        },
+        "Password": { 
+          "type": "string",
+          "description": "Make it Strong"
+        },
+        "submit": { 
+          "type": "string"
+         }
+     }
+   }
