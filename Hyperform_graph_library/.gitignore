@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /playground
+/Master_Framework_Setup/node_modules
 
 # testing
 /coverage

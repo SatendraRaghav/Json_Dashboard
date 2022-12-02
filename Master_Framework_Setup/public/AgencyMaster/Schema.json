@@ -1,23 +1,22 @@
 {
-    "type": "object",
-     "properties": {
-      "header": {
+   "type": "object",
+   "properties": {
+      "CRN_Number": {
          "type": "string"
-       },
-      "firstName":{
-         "type": "string",
-         "description":"Please enter your fisrt name",
-         "title":"Your First Name"
       },
-      "lastName":{
+      "VendorCode": {
          "type": "string",
-         "description":"Please enter your fisrt name",
-         "title":"Your Last Name"
+         "description": "Please enter your fisrt name"
       },
-      "select":{
+      "AgencyType": {
+         "type": "string"
+      },
+      "Active":
+      {
          "type": "string",
-         "description":"Please enter your fisrt name",
-         "title":"Your Last Name"
-      }
+         "enum": [
+            "Yes","No"
+         ]
       }
    }
+}

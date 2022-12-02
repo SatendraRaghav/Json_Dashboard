@@ -1,113 +1,942 @@
 {
     "type": "HorizontalLayout",
-        "elements": [
+    "elements": [
         {
             "type": "Control",
-            "scope": "#/properties/Appbar",
-            "layout":{"xs":12,"sm":12,"md":12,"lg":12},
+            "scope": "#/properties/CRNInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
             "option": {
                 "value": {
                     "content": {
-                        "eventName": "submitForm"
-                    }}
-        }},
-                {
-                    "type": "Control",
-                    "scope": "#/properties/submitButton",
-                    "layout":{"xs":3,"sm":3,"md":2,"lg":2},
-                    "option": {
-                        "value": {
-                            "content": {
-                                "name": "Approve",
-                                "variant": "contained",
-                                "color": "success",
-                                "eventName": " ",
-                                "type": " ",
-                                "size": "small"
-                            },
-                            "style":{
-                                "width":"100%"
-                            }
-                        }
+                        "label": "CRN Number",
+                        "required": true,
+                        "type": "number",
+                        "variant": "filled",
+                        "size": "normal"
                     }
-                },
-                {
-                    "type": "Control",
-                    "scope": "#/properties/submitButton",
-                    "layout":{"xs":3,"sm":3,"md":2,"lg":2},
-                    "option": {
-                        "value": {
-                            "content": {
-                                "name": "Pending",
-                                "variant": "contained",
-                                "color": "warning",
-                                "eventName": " ",
-                                "type": " ",
-                                "size": "small"
-                            },
-                            "style":{
-                                "width":"100%"
-                            }
-                        }
-                    }
-                },
-                {
-                    "type": "Control",
-                    "scope": "#/properties/submitButton",
-                    "layout":{"xs":2,"sm":2,"md":2,"lg":2},
-                    "option": {
-                        "value": {
-                            "content": {
-                                "name": "Reject",
-                                "variant": "contained",
-                                "color": "error",
-                                "eventName": " ",
-                                "type": " ",
-                                "size": "small"
-                            },
-                            "style":{
-                                "width":"100%"
-                            }
-                        }
-                    }
-                },
-                {
-                    "type": "Control",
-                    "scope": "#/properties/EmptyBox",
-                    "layout":{"xs":0,"sm":0,"md":2,"lg":2}
-                 
-                    
-                },
-                {
-                    "type": "Control",
-                    "scope": "#/properties/submitButton",
-                    "layout":{"xs":3,"sm":3,"md":4,"lg":4},
-                    "option": {
-                        "value": {
-                            "content": {
-                                "name": "Coloumn",
-                                "variant": "contained",
-                                "color": "info",
-                                "eventName": " ",
-                                "type": "text",
-                                "size": "medium"
-                            },
-                            "style":{
-                                "width":"100%"
-                            }
-                        }
-                    }
-                },
-                {
-                    "type": "Control",
-                    "scope": "#/properties/firstName",
-                    "layout":{"xs":5,"sm":5,"md":5,"lg":5}
-                },
-                {
-                    "type": "Control",
-                    "scope": "#/properties/lastName",
-                    "layout":{"xs":5,"sm":5,"md":5,"lg":5}
-              
                 }
-    ]
-}
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/VenndorCodeInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Vendor Code",
+                        "required": true,
+                        "type": "number",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AgencyTypeSelect",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agency Type",
+                        "required": true,
+                        "variant": "filled",
+                        "options": [
+                            "NATIONAL",
+                            "MULTICITY",
+                            "SINGLECITY"
+                        ],
+                        "type": "select"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/RoleCategorySelect",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Role Category",
+                        "required": true,
+                        "variant": "filled",
+                        "options": [
+                            "DSA",
+                            "VENDOR"
+                        ],
+                        "type": "select"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/NameOfAgencyInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Name of Agency",
+                        "required": true,
+                        "type": "text",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AgencyIdentifierSelect",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agency Indentifier",
+                        "required": true,
+                        "variant": "filled",
+                        "options": [
+                            "CORPORATE",
+                            "RETAIL"
+                        ],
+                        "type": "select"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/PanNumberInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Pan Number",
+                        "required": true,
+                        "type": "text",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AgencyMobileInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agency Mobile",
+                        "required": true,
+                        "type": "number",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AgencyPhoneInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agency Phone Number",
+                        "required": true,
+                        "type": "number",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AgencyE-MailIDInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agency E-Mail ID",
+                        "required": true,
+                        "type": "email",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AgreementExpDate",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agreement Exp. Date",
+                        "required": true,
+                        "type": "date",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AgreementStartDate",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agreement Start Date",
+                        "required": true,
+                        "type": "date",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/FirstAgreementDate",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "First Agreement Date",
+                        "required": true,
+                        "type": "date",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AgencyMainContactPersonInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agency Main Contact Person",
+                        "required": true,
+                        "type": "text",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/InactiveReasonSelect",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Agency Main Contact Person",
+                        "required": true,
+                        "variant": "filled",
+                        "options": [
+                            "FRAUD",
+                            "Agreement Expire",
+                            "Others"
+                        ],
+                        "type": "select"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/ActiveSelect",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Active",
+                        "required": true,
+                        "variant": "filled",
+                        "options": [
+                            "YES",
+                            "NO"
+                        ],
+                        "type": "radio"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/InactiveRemarkInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Inactive Remark",
+                        "required": true,
+                        "type": "text",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AdditionalAddressInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Additional Addresss",
+                        "required": true,
+                        "type": "text",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AdditinalMobileInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Additional Mobile Number",
+                        "required": true,
+                        "type": "number",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AdditionalE-MailIdInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Additional E-Mail Id",
+                        "required": true,
+                        "type": "email",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/AdditionalE-MailIdInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Additional E-Mail Id",
+                        "required": true,
+                        "type": "email",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/BankAccountNumberInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Bank Account Number",
+                        "required": true,
+                        "type": "number",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/IFSCCodeInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "IFSC Code",
+                        "required": true,
+                        "type": "number",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/BankNameInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Bank Name",
+                        "required": true,
+                        "type": "text",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/RegisteredOfficeLocationInput",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Registered Office Location",
+                        "required": true,
+                        "type": "text",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/CompanyIncorpationDate",
+            "layout": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6
+            },
+            "option": {
+                "value": {
+                    "content": {
+                        "label": "Company Incorpation Date",
+                        "required": true,
+                        "type": "date",
+                        "variant": "filled",
+                        "size": "normal"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Group",
+            "label": "Upload Your Documents",
+            "layout": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 12
+            },
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/AgreementCopyFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Agreement Copy",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/AgreementLetterFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "The Agreement or Appointment Letter",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/ApplicationFormFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Application Form",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DueDiligenceReportFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Due Diligence Report",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/BrokageLetterFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Brokage Letter",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DisclosureLetterFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Disclosure Letter",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DMALetterFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "DSA/DMA No Calling Set Up On DMA/DSA Letter Head",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/KotakLetterHeadFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "National Do Not Call Letter On Kotak Letter Head",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/RMVisitreportFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "RM Visit Report",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/PanDocumentsFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Pan documents",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/CancelChequeFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Cancel Cheque",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/CIBILReportFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "CIBIL Report",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/OtherUploadsFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Other Upload",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/PayoutStructureFile",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Payout Structure File",
+                                        "required": true,
+                                        "type": "file",
+                                        "variant": "filled",
+                                        "size": "normal"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        
+                {
+                    "type": "VerticalLayout",
+                    "layout": {
+                        "xs": 12,
+                        "sm": 12,
+                        "md": 12,
+                        "lg": 12
+                    },
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/InactiveReasonSelect",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Agency Main Contact Person",
+                                        "required": true,
+                                        "variant": "filled",
+                                        "options": [
+                                            "FRAUD",
+                                            "Agreement Expire",
+                                            "Others"
+                                        ],
+                                        "type": "select"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/InactiveReasonSelect",
+                            "layout": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 6,
+                                "lg": 6
+                            },
+                            "option": {
+                                "value": {
+                                    "content": {
+                                        "label": "Agency Main Contact Person",
+                                        "required": true,
+                                        "variant": "filled",
+                                        "options": [
+                                            "FRAUD",
+                                            "Agreement Expire",
+                                            "Others"
+                                        ],
+                                        "type": "select"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+                
+            ]
+        }

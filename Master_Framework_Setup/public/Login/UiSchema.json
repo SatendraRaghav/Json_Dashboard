@@ -13,7 +13,7 @@
         }},
         {
             "type": "Control",
-            "scope": "#/properties/email",
+            "scope": "#/properties/emailInput",
             "layout":{"xs":12,"sm":12,"md":12,"lg":12},
             "option": {
                 "value": {
@@ -26,16 +26,14 @@
                        "helperText":""
                     },
                     "style": {
-                        "width":"50%",
-                        "textAlign":"center",
-                         "margin":"10px auto"
+                        "width":"50%"
                     }
                 }
             }
         },
         {
             "type": "Control",
-            "scope": "#/properties/password",
+            "scope": "#/properties/passwordInput",
             "layout":{"xs":12,"sm":12,"md":12,"lg":12},
             "option": {
                 "value": {
@@ -48,17 +46,15 @@
                        "helperText":""
                     },
                     "style": {
-                        "width":"50%",
-                        "textAlign":"center",
-                         "margin":"10px auto"
+                        "width":"50%"
                     }
                 }
             }
         },
         {
             "type": "Control",
-            "scope": "#/properties/submitButton",
-            "layout":{"xs":3,"sm":3,"md":4,"lg":4},
+            "scope": "#/properties/Button",
+            "layout":{"xs":12,"sm":12,"md":12,"lg":12},
             "option": {
                 "value": {
                     "content": {
@@ -69,8 +65,8 @@
                         "type": "text",
                         "size": "medium"
                     },
-                    "style":{
-                        "width":"100%"
+                    "style": {
+                        "width":"50%"
                     }
                 }
             }

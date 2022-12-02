@@ -1,18 +1,17 @@
 import React from 'react';
 import { withJsonFormsControlProps } from '@jsonforms/react';
-import CustomInput from '../Components/CustomInput';
 import CustomDate from '../Components/CustomDate';
 
-const ControlInput = (props:any) => {
+const ControlDate = (props:any) => {
   const data:any = props.uischema.option.value;
   
 
   return(
-    <CustomInput
+    <CustomDate
       data={data}
       value={props.data}
       updateValue={(newValue:any) => props.handleChange(props.path, newValue)}
    />)
   }
 
-export default withJsonFormsControlProps(ControlInput);
+export default withJsonFormsControlProps(ControlDate);

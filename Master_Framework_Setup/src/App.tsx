@@ -7,6 +7,7 @@ import {
 import { renders } from './renders';
 import { JsonSchema } from '@jsonforms/core';
 import { UISchemaElement } from '@jsonforms/core';
+import "./App.css"
 
 type formDataType = {
   data:{}
@@ -32,6 +33,7 @@ const App = () => {
   }, [])
 
   const changeHandler = (data:any,errors:any)=>{
+    console.log(JSON.stringify(data))
     window.sessionStorage.setItem("formData",JSON.stringify(data));
     setData(data)
   }

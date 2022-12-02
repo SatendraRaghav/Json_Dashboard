@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const logicHolder = (eventName:string| null) => {
+    console.log( window.sessionStorage.getItem("formData"))
     if(eventName==="submitForm"){
      const data =  window.sessionStorage.getItem("formData");
      const config = {

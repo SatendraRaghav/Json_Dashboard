@@ -17,6 +17,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"]                              /* Skip type checking all .d.ts files. */
+  "include": ["src"]                           
   }
 

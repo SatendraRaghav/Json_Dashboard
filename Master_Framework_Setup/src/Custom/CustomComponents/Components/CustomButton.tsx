@@ -5,13 +5,13 @@ import { logicHolder } from '../../../Logic/Logic';
 
 export  const CustomButton = ({data}:any)=>{
      return(
-      <div>
+      <div style={{width:"100%",...data.style, margin:"auto auto"}}>
      <Button
-     type={data.content.type}
-     sx={data.style}  
+     fullWidth
+     type={data.content.type} 
      color={data.content.color}
      variant={data.content.variant}
      size={data.content.size}
      onClick = {()=>logicHolder(data.content.eventName)}
-    >{data.content.name}</Button>  </div>)
+    >{data.content.name}</Button> </div>)
   }
