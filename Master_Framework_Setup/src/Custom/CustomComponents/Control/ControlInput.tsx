@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withJsonFormsControlProps } from '@jsonforms/react';
 import CustomInput from '../Components/CustomInput';
-import CustomDate from '../Components/CustomDate';
 
 const ControlInput = (props:any) => {
   const data:any = props.uischema.option.value;
-  
+  // const [data,setData] = useState<null|{}>(null)
+  // if(typeof props.uischema.option ==='object'){
+  // const demoData:any = props.uischema.option.value;
+  //    setData(demoData)
+  // }else{
+  //    setData({})
+  // }
 
   return(
     <CustomInput

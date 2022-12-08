@@ -19,7 +19,6 @@ import ControlFile from './Custom/CustomComponents/Control/ControlFile';
 import TesterFile from './Custom/CustomComponents/ControlTester/TesterFile';
 import ControlDate from './Custom/CustomComponents/Control/ControlDate';
 import TesterDate from './Custom/CustomComponents/ControlTester/TesterDate';
-import { TableLayout, tableLayoutTester } from './Custom/CustomLayout/TableLayout';
 export const renders = [
     ...materialRenderers,
     { tester:TesterAppbar,renderer:ControlAppbar },
@@ -31,5 +30,5 @@ export const renders = [
     {tester:TesterFile,renderer:ControlFile },
     {tester:TesterDate,renderer:ControlDate },
     {tester:materialHorizontalLayoutTester,renderer:MaterailLayoutHorizontal},
-    {tester:tableLayoutTester,renderer:TableLayout}
+    // {tester:TableLayoutTester,renderer:TableLayout}
   ];

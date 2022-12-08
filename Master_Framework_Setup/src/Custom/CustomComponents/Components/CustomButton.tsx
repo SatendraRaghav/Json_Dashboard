@@ -10,8 +10,8 @@ export  const CustomButton = ({data}:any)=>{
      fullWidth
      type={data.content.type} 
      color={data.content.color}
-     variant={data.content.variant}
-     size={data.content.size}
+     variant={data.content.variant&&"contained"}
+     size={data.content.size&&"medium"}
      onClick = {()=>logicHolder(data.content.eventName)}
     >{data.content.name}</Button> </div>)
   }

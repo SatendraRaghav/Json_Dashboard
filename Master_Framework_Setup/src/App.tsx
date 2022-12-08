@@ -8,6 +8,7 @@ import { renders } from './renders';
 import { JsonSchema } from '@jsonforms/core';
 import { UISchemaElement } from '@jsonforms/core';
 import "./App.css"
+import { createAjv } from "@jsonforms/core";
 
 type formDataType = {
   data:{}
@@ -37,6 +38,15 @@ const App = () => {
     window.sessionStorage.setItem("formData",JSON.stringify(data));
     setData(data)
   }
+  // const Ajv = new ajv()
+  // ajv.addFormat('media-capture', {
+  //   type: 'string'
+  // })
+ const myAjv = createAjv(); // import { createAjv } from @jsonforms/core
+myAjv.addFormat('inputFile', {
+  type: 'string',
+  
+});
   return (
     <div className='App'>
       <JsonForms
@@ -45,6 +55,7 @@ const App = () => {
         data={data}
         renderers={renders}
         cells={materialCells}
+        ajv={myAjv}
         onChange = {({ data, errors} ) => changeHandler(data,errors)}
       />
     </div>

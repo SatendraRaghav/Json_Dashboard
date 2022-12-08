@@ -20,9 +20,9 @@ export const renderLayoutElements = (
   cells?: JsonFormsCellRendererRegistryEntry[]
 ) => {
   return elements.map((child:any, index:number) => {
-    const {xs,sm,md,lg} = child.layout;
+    // const {xs,sm,md,lg} = child.layout;
     return(
-    <Grid2  key={`${path}-${index}`} xs={xs} sm={sm} md={md} lg={lg}>
+    <Grid2  key={`${path}-${index}`} xs={child.layout?(child.layout.xs?child.layout.xs:child.layout):12} sm={child.layout?(child.layout.sm?child.layout.sm:child.layout):12} md={child.layout?(child.layout.md?child.layout.md:child.layout):12} lg={child.layout?(child.layout.lg?child.layout.lg:child.layout):12}>
       <JsonFormsDispatch
         uischema={child}
         schema={schema}

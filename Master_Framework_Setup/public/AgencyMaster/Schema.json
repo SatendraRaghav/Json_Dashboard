@@ -1,22 +1,75 @@
 {
-   "type": "object",
-   "properties": {
-      "CRN_Number": {
-         "type": "string"
-      },
-      "VendorCode": {
-         "type": "string",
-         "description": "Please enter your fisrt name"
-      },
-      "AgencyType": {
-         "type": "string"
-      },
-      "Active":
-      {
-         "type": "string",
-         "enum": [
-            "Yes","No"
-         ]
+  "type":"object",
+ "properties": {
+  "fileExample": {
+    "type": "string",
+    "format":"FileInput"
+  },
+    "PortfoliosAgency": {
+      "type": "array",
+      "title":"Portfolio Agency Category Mapping",
+      "items": {
+        "type": "object",
+        "properties": {
+        }
       }
-   }
+    },
+    "RCUProducts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "RCUProducts": {
+            "type": "string",
+            "enum": [
+             "no Records"
+            ]
+          }
+        }
+      }
+    },
+    
+    "AgencyAuthorizedSignatures":{
+      "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+          }
+        }
+      },
+      "Branches":{
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            
+          }
+      }
+    }, 
+    "AgencyBranchLocationMapping":{ 
+      "type": "array",
+        "title":"Agency Branch Location Mapping",
+        "items": {
+          "type": "object",
+          "properties": {
+            "AgencyBranchName":{
+              "type":"string"
+            },
+            "KotakState":{
+              "type":"string"
+            }
+          }
+    }
+
+  },
+  "Proprietors":{
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        
+      }
+  }
+}
+}
 }
