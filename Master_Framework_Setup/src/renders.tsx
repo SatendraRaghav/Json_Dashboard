@@ -19,6 +19,10 @@ import ControlFile from './Custom/CustomComponents/Control/ControlFile';
 import TesterFile from './Custom/CustomComponents/ControlTester/TesterFile';
 import ControlDate from './Custom/CustomComponents/Control/ControlDate';
 import TesterDate from './Custom/CustomComponents/ControlTester/TesterDate';
+import ControlDataTable from './Custom/CustomComponents/Control/ControlDataTable';
+import TesterDataTable from './Custom/CustomComponents/ControlTester/TesterDataTable';
+import TesterBox from './Custom/CustomComponents/ControlTester/TesterBox';
+import ControlBox from './Custom/CustomComponents/Control/ControlBox';
 export const renders = [
     ...materialRenderers,
     { tester:TesterAppbar,renderer:ControlAppbar },
@@ -31,4 +35,6 @@ export const renders = [
     {tester:TesterDate,renderer:ControlDate },
     {tester:materialHorizontalLayoutTester,renderer:MaterailLayoutHorizontal},
     // {tester:TableLayoutTester,renderer:TableLayout}
+    {tester:TesterDataTable,renderer:ControlDataTable},
+    {tester:TesterBox,renderer:ControlBox}
   ];

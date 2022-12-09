@@ -1,0 +1,109 @@
+{
+    "type": "HorizontalLayout",
+    "elements": [
+        {
+            "type": "Control",
+            "scope": "#/properties/Appbar",
+            "layout":12,
+            "option": {
+                "value": {
+                    "content": {
+                        "eventName": "LogOut",
+                        "ButtonName":"Log Out"
+
+                    }}
+        }},
+        {
+            "type": "Control",
+            "scope": "#/properties/ApproveButton",
+            "layout": {"xs":4,"sm":4,"md":3,"lg":2},
+            "option": {
+                "value": {
+                    "content": {
+                        "name": "Approve Records",
+                        "variant": "contained",
+                        "color": "success",
+                        "eventName": "BackToAgencyApproveRecords",
+                        "type": "text",
+                        "size": "large"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/PendingButton",
+            "layout": {"xs":4,"sm":4,"md":3,"lg":2},
+            "option": {
+                "value": {
+                    "content": {
+                        "name": "Pending Records",
+                        "variant":"outlined",
+                        "color": "secondary",
+                        "eventName": "BackToAgencyPendingRecords",
+                        "type": "text",
+                        "size": "large"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/RejectButton",
+            "layout": {"xs":4,"sm":4,"md":3,"lg":2},
+            "option": {
+                "value": {
+                    "content": {
+                        "name": "Reject Button",
+                        "variant": "outlined",
+                        "color": "error",
+                        "eventName": "BackToAgencyRejectRecords",
+                        "type": "text",
+                        "size": "large"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/EmptyBox",
+            "layout": {"xs":0,"sm":0,"md":3,"lg":6}
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/CRNDataTable",
+            "layout": 12,
+            "option": {
+                "value": {
+                    "content": {
+                        "redirectPage":"/AgencyForm",
+                        "column":[
+                            { "field": "id",
+                            "width":"80",
+                            "hide":true
+                      },
+                            { "field": "CRNInput",
+                              "width":"80" 
+                        },
+                            {
+                             "field": "VenndorCodeInput",
+                             "width":"150"
+                            },
+                            {
+                              "field": "AgencyTypeSelect",
+                              "width":"150"},
+                            {
+                              "field": "RoleCategorySelect",
+                              "width":"150"
+                            },
+                            {
+                                "field": "NameOfAgencyInput",
+                                "width":"150"
+                              }
+                          ],
+                         "DataApi":false
+                    }
+                }
+            }
+        }]
+    }

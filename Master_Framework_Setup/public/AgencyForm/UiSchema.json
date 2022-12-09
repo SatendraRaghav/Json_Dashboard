@@ -3,6 +3,39 @@
     "elements": [
         {
             "type": "Control",
+            "scope": "#/properties/Appbar",
+            "layout":12,
+            "option": {
+                "value": {
+                    "content": {
+                        "eventName": "LogOut",
+                        "ButtonName":"Log Out"
+                    }}
+        }},
+        {
+            "type": "Control",
+            "scope": "#/properties/BackButton",
+            "layout": {"xs":4,"sm":4,"md":3,"lg":3},
+            "option": {
+                "value": {
+                    "content": {
+                        "name": "<<- Back",
+                        "variant": "contained",
+                        "color": "info",
+                        "eventName": "BackToAgencyApproveRecords",
+                        "type": "text",
+                        "size": "large"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/EmptyBox",
+            "layout": {"xs":8,"sm":8,"md":9,"lg":9}
+        },
+        {
+            "type": "Control",
             "scope": "#/properties/CRNInput",
             "layout": 6,
             "option": {

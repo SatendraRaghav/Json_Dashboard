@@ -1,0 +1,34 @@
+{
+    "type": "HorizontalLayout",
+    "elements": [
+        {
+            "type": "Control",
+            "scope": "#/properties/Appbar",
+            "layout":12,
+            "option": {
+                "value": {
+                    "content": {
+                        "eventName": "LogOut",
+                        "ButtonName":"Log Out"
+                    }}
+        }},
+        {
+            "type": "Control",
+            "scope": "#/properties/Box",
+            "layout":12,
+            "option": {
+                "value": {
+                    "content": {
+                       "heading":"Welcome in HyperForm",
+                       "variant":"h6"
+                    },
+                    "style":{
+                        "width":"90%",
+                        "margin":"auto",
+                        "textAlign":"center",
+                        "backgroundColor":"Green",
+                        "color":"white"
+                    }
+                }
+        }}
+]}

@@ -3,9 +3,8 @@ import { withJsonFormsControlProps } from '@jsonforms/react';
 import { CustomAppbar } from '../Components/CustomAppbar';
 
 const ControlAppbar = (props:any) => {
-  const [data,setData] = useState({"option":{"value":{}}})
-
-  props.uischema.option&& props.uischema.option.value&&setData(props.uischema.option.value)
+  
+const data = props.uischema.option.value
   return(
   <CustomAppbar
      Data={data}

@@ -4,11 +4,12 @@
         {
             "type": "Control",
             "scope": "#/properties/Appbar",
-            "layout":{"xs":12,"sm":12,"md":12,"lg":12},
+            "layout":12,
             "option": {
                 "value": {
                     "content": {
-                        "eventName": "submitForm"
+                        "eventName": "submitForm",
+                        "ButtonName":"Sign In"
                     }}
         }},
         {
