@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import { Navigate } from "react-router-dom";
 import React,{useContext} from "react";
 import { LogicHolder } from '../../../Logic/Logic';
-import { actions,DataContext } from '../../../Context';
+import {DataContext } from '../../../Context';
 
 
 export  const CustomButton = ({data}:any)=>{

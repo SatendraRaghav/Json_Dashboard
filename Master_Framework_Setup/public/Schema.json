@@ -1,1 +1,11 @@
-{}
+{
+    "type": "object",
+    "properties": {
+      "BoxDemo": {
+        "type": "string"
+      },
+      "satendra": {
+        "type": "string"
+      }
+    }
+}

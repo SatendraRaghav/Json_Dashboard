@@ -19,7 +19,7 @@
             "option": {
                 "value": {
                     "content": {
-                        "name": "<<- Back",
+                        "name": "<< Back",
                         "variant": "contained",
                         "color": "info",
                         "eventName": "BackToAgencyApproveRecords",
@@ -36,8 +36,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/CRNInput",
+            "scope": "#/properties/CRN_Number",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -50,8 +53,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/VenndorCodeInput",
+            "scope": "#/properties/Venndor_Code",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -63,8 +69,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AgencyTypeSelect",
+            "scope": "#/properties/Agency_Type",
             "layout": 6,
+            "options":{
+                "selectType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -82,8 +91,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/RoleCategorySelect",
+            "scope": "#/properties/Role_Category",
             "layout": 6,
+            "options":{
+                "selectType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -100,8 +112,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/NameOfAgencyInput",
+            "scope": "#/properties/Name_Of_Agency",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -114,8 +129,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AgencyIdentifierSelect",
+            "scope": "#/properties/Agency_Identifier",
             "layout": 6,
+            "options":{
+                "selectType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -132,8 +150,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/PanNumberInput",
+            "scope": "#/properties/Pan_Number",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -146,12 +167,15 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AgencyMobileInput",
+            "scope": "#/properties/Agency_Mobile_No.",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
-                        "label": "Agency Mobile",
+                        "label": "Agency Mobile No.",
                         "type": "number",
                         "required": true
                     }
@@ -160,8 +184,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AgencyPhoneInput",
+            "scope": "#/properties/Agency_Phone_No.",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -173,8 +200,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AgencyE-MailIDInput",
+            "scope": "#/properties/Agency_E-Mail_ID",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -187,7 +217,7 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AgreementExpDate",
+            "scope": "#/properties/Agreement_Exp_Date",
             "layout": 6,
             "option": {
                 "value": {
@@ -201,7 +231,7 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AgreementStartDate",
+            "scope": "#/properties/Agreement_Start_Date",
             "layout": 6,
             "option": {
                 "value": {
@@ -215,7 +245,7 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/FirstAgreementDate",
+            "scope": "#/properties/First_Agreement_Date",
             "layout": 6,
             "option": {
                 "value": {
@@ -229,8 +259,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AgencyMainContactPersonInput",
+            "scope": "#/properties/Agency_Main_Contact_Person",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -243,8 +276,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/ActiveSelect",
+            "scope": "#/properties/Active",
             "layout": 6,
+            "options":{
+                "selectType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -261,12 +297,15 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/InactiveReasonSelect",
+            "scope": "#/properties/Inactive_Reason",
             "layout": 6,
+            "options":{
+                "selectType":true
+            },
             "option": {
                 "value": {
                     "content": {
-                        "label": "Inactive Reason",
+                        "label": "Inactive_Reason",
                         "options": [
                             "FRAUD",
                             "Agreement Expire",
@@ -279,8 +318,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/InactiveRemarkInput",
+            "scope": "#/properties/Inactive_Remark",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -292,8 +334,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AdditionalAddressInput",
+            "scope": "#/properties/Additional_Address",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -305,8 +350,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AdditinalMobileInput",
+            "scope": "#/properties/Additinal_Mobile_No.",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -318,8 +366,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/AdditionalE-MailIdInput",
+            "scope": "#/properties/Additional_E-Mail_Id",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -331,8 +382,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/BankAccountNumberInput",
+            "scope": "#/properties/Bank_Account_Number",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -345,7 +399,10 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/IFSCCodeInput",
+            "scope": "#/properties/IFSC_Code",
+            "options":{
+                "inputType":true
+            },
             "layout": 6,
             "option": {
                 "value": {
@@ -359,7 +416,10 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/BankNameInput",
+            "scope": "#/properties/Bank_Name",
+            "options":{
+                "inputType":true
+            },
             "layout": 6,
             "option": {
                 "value": {
@@ -373,8 +433,11 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/RegisteredOfficeLocationInput",
+            "scope": "#/properties/Registered_Office_Location",
             "layout": 6,
+            "options":{
+                "inputType":true
+            },
             "option": {
                 "value": {
                     "content": {
@@ -387,7 +450,7 @@
         },
         {
             "type": "Control",
-            "scope": "#/properties/CompanyIncorpationDate",
+            "scope": "#/properties/Company_Incorpation_Date",
             "layout": 6,
             "option": {
                 "value": {
@@ -412,7 +475,7 @@
                     "elements": [
                         {
                             "type": "Control",
-                            "scope": "#/properties/AgreementCopyFile",
+                            "scope": "#/properties/Agreement_Copy_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -430,7 +493,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/AgreementLetterFile",
+                            "scope": "#/properties/Agreement_Letter_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -448,7 +511,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/ApplicationFormFile",
+                            "scope": "#/properties/Application_Form_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -465,7 +528,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/DueDiligenceReportFile",
+                            "scope": "#/properties/Due_Diligence_Report_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -482,7 +545,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/BrokageLetterFile",
+                            "scope": "#/properties/Brokage_Letter_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -500,7 +563,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/DisclosureLetterFile",
+                            "scope": "#/properties/Disclosure_Letter_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -518,7 +581,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/DMALetterFile",
+                            "scope": "#/properties/DMA_Letter_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -536,7 +599,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/KotakLetterHeadFile",
+                            "scope": "#/properties/Kotak_Letter_Head_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -554,7 +617,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/RMVisitreportFile",
+                            "scope": "#/properties/RM_Visit_report File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -571,7 +634,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/PanDocumentsFile",
+                            "scope": "#/properties/Pan_Documents_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -588,7 +651,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/CancelChequeFile",
+                            "scope": "#/properties/Cancel_Cheque_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -605,7 +668,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/CIBILReportFile",
+                            "scope": "#/properties/CIBIL_Report_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -622,7 +685,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/OtherUploadsFile",
+                            "scope": "#/properties/Other_Uploads_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -639,7 +702,7 @@
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/PayoutStructureFile",
+                            "scope": "#/properties/Payout_Structure_File",
                             "layout": {
                                 "xs": 12,
                                 "sm": 12,
@@ -671,7 +734,10 @@
                             "elements": [
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/PortfoliosAgencySelect",
+                                    "scope": "#/properties/Portfolios",
+                                    "options":{
+                                        "selectType":true
+                                    },
                                     "layout": 6,
                                     "option": {
                                         "value": {
@@ -692,12 +758,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/PortfoliosAgencySelect",
+                                    "scope": "#/properties/Portfolios_Agency",
                                     "layout": 6,
+                                    "options":{
+                                        "selectType":true
+                                    },
                                     "option": {
                                         "value": {
                                             "content": {
-                                                "label": "Portfolios",
+                                                "label": "Portfolios Agency",
                                                 "options": [
                                                     "ORPORATE DSA",
                                                     "PLATINUM",
@@ -726,14 +795,17 @@
             "elements": [
                 {
                     "type": "Control",
-                    "scope": "#/properties/RCUProducts",
+                    "scope": "#/properties/RCU_Products",
                     "options": {
                         "detail": {
                             "type": "HorizontalLayout",
                             "elements": [
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/RCUProductsSelect",
+                                    "scope": "#/properties/RCU_Products",
+                                    "options":{
+                                        "selectType":true
+                                    },
                                     "option": {
                                         "value": {
                                             "content": {
@@ -758,14 +830,14 @@
             "elements": [
                 {
                     "type": "Control",
-                    "scope": "#/properties/AgencyAuthorizedSignatures",
+                    "scope": "#/properties/Agency_Authorized_Signatures",
                     "options": {
                         "detail": {
                             "type": "HorizontalLayout",
                             "elements": [
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/SignatureFile",
+                                    "scope": "#/properties/Signature_File",
                                     "layout": {
                                         "xs": 12,
                                         "sm": 12,
@@ -786,12 +858,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/SignatoryNameInput",
+                                    "scope": "#/properties/Signatory_Name",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -804,18 +879,21 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/SignatoryDesignationInput",
+                                    "scope": "#/properties/Signatory_Designation",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
                                     },
+                                    "options":{
+                                        "inputType":true
+                                    },
                                     "option": {
                                         "value": {
                                             "content": {
-                                                "label": "Vendor Code",
-                                                "type": "number"
+                                                "label": "Signature Designation",
+                                                "type": "text"
                                             }
                                         }
                                     }
@@ -839,12 +917,15 @@
                             "elements": [
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/BranchNameInput",
+                                    "scope": "#/properties/Branch_Name",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -858,12 +939,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/BranchAddress1Input",
+                                    "scope": "#/properties/Address1",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -876,12 +960,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/BranchAddress2Input",
+                                    "scope": "#/properties/Address2",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -894,12 +981,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/BranchAddress3Input",
+                                    "scope": "#/properties/Address3",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -912,12 +1002,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/BranchStateInput",
+                                    "scope": "#/properties/Branch_State",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -930,12 +1023,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/CINNumberInput",
+                                    "scope": "#/properties/CIN_Number",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -948,12 +1044,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/GSTINInput",
+                                    "scope": "#/properties/GSTIN",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -986,7 +1085,7 @@
             "elements": [
                 {
                     "type": "Control",
-                    "scope": "#/properties/AgencyBranchLocationMapping"
+                    "scope": "#/properties/Agency_Branch_Location_Mapping"
                 }
             ]
         },
@@ -1003,12 +1102,15 @@
                             "elements": [
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/ProprietorsNameInput",
+                                    "scope": "#/properties/Proprietors_Name",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -1021,12 +1123,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/ProprietorsPositionTypeInput",
+                                    "scope": "#/properties/Position_Type",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -1039,12 +1144,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/ProprietorsDOB_Date",
+                                    "scope": "#/properties/D.O.B",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "dateType":true
                                     },
                                     "option": {
                                         "value": {
@@ -1056,13 +1164,16 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/ProprietorsMobileNumberInput",
+                                    "scope": "#/properties/Mobile_Number",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
                                     },
+                                    "options":{
+                                        "inputType":true
+                                      },
                                     "option": {
                                         "value": {
                                             "content": {
@@ -1074,12 +1185,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/ProprietorsEmailInput",
+                                    "scope": "#/properties/Email",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -1092,12 +1206,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/ProprietorAddressInput",
+                                    "scope": "#/properties/Address",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -1110,12 +1227,15 @@
                                 },
                                 {
                                     "type": "Control",
-                                    "scope": "#/properties/ProprietorsPanNumberInput",
+                                    "scope": "#/properties/Pan_Number",
                                     "layout": {
                                         "xs": 6,
                                         "sm": 6,
                                         "md": 4,
                                         "lg": 4
+                                    },
+                                    "options":{
+                                        "inputType":true
                                     },
                                     "option": {
                                         "value": {
@@ -1153,15 +1273,14 @@
                         "variant": "contained",
                         "color": "info",
                         "eventName": "AgencySendForApprover",
-                        "type": "text",
+                        "type": "submit",
                         "size": "large"
                     },
                     "style": {
-                        "width": "100%",
-                        "padding": "20px 0 50px 0"
-                    }
+                        "width": "70%",
+                        "margin":"auto auto"
                 }
             }
-        }
+        }}
     ]
 }

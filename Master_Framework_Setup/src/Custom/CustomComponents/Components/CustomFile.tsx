@@ -1,8 +1,5 @@
-import React from 'react';
 import { IconButton, TextField, Typography } from '@mui/material';
 import { Card} from '@mui/material';
-import { Box } from '@mui/system';
-
 import Paper from '@mui/material/Paper';
 import InputAdornment from '@mui/material/InputAdornment';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
@@ -14,12 +11,9 @@ const CustomFile = ({ data, value, updateValue }: any) => {
   const saveData = async (value: any) => {
 
     if (data.content.saveApi) {
-      console.log("if --------- " + data.content.saveApi)
       const result: any = await axios.post(`${data.content.saveApi}`, { "file": value });
-      console.log(result.data)
       updateValue(value)
     } else {
-      console.log("else-------------------")
       updateValue(value)
     };
   }

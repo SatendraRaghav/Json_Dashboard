@@ -2,7 +2,7 @@ import TesterButton from './Custom/CustomComponents/ControlTester/TesterButton';
 import ControlButton from './Custom/CustomComponents/Control/ControlButton';
 import TesterAppbar from './Custom/CustomComponents/ControlTester/TesterAppbar';
 import ControlAppbar from './Custom/CustomComponents/Control/ControlAppbar';
-
+import { myInputTester } from './Custom/CustomComponents/ControlTester/TesterInput';
 import {
     materialRenderers,
   } from '@jsonforms/material-renderers';
@@ -23,6 +23,11 @@ import ControlDataTable from './Custom/CustomComponents/Control/ControlDataTable
 import TesterDataTable from './Custom/CustomComponents/ControlTester/TesterDataTable';
 import TesterBox from './Custom/CustomComponents/ControlTester/TesterBox';
 import ControlBox from './Custom/CustomComponents/Control/ControlBox';
+import { myBoxTester } from './Custom/CustomComponents/ControlTester/TesterBox';
+import { myFileTester } from './Custom/CustomComponents/ControlTester/TesterFile';
+import { myDateTester } from './Custom/CustomComponents/ControlTester/TesterDate';
+import { mySelectTester } from './Custom/CustomComponents/ControlTester/TesterSelect';
+
 export const renders = [
     ...materialRenderers,
     { tester:TesterAppbar,renderer:ControlAppbar },
@@ -36,5 +41,10 @@ export const renders = [
     {tester:materialHorizontalLayoutTester,renderer:MaterailLayoutHorizontal},
     // {tester:TableLayoutTester,renderer:TableLayout}
     {tester:TesterDataTable,renderer:ControlDataTable},
-    {tester:TesterBox,renderer:ControlBox}
+    {tester:TesterBox,renderer:ControlBox},
+    {tester:myBoxTester,renderer:ControlBox},
+    { tester:myInputTester,renderer:ControlInput },
+    { tester:myFileTester,renderer:ControlFile },
+    { tester:myDateTester,renderer:ControlDate },
+    { tester:mySelectTester,renderer:ControlSelect }
   ];

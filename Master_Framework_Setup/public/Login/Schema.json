@@ -10,8 +10,7 @@
         },
         "Password": { 
           "type": "string",
-          "description": "Make it Strong",
-          "i18n": "myCustomName" 
+          "description": "Make it Strong"
         },
         "submit": { 
           "type": "string"

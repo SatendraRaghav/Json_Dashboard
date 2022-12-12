@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
 import { Card, TextField } from '@mui/material';
-import { Box } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 
 
 const CustomInput = ({ data, value, updateValue }: any) => {
-     const [reg, setReg] = useState(false)
      return (
 
-          <Paper elevation={2} sx={{ width: "80%", ...data.style, margin: "auto auto" }} >
+          <Paper elevation={2} sx={{ width: "80%",margin: "auto auto" , ...data.style}} >
                {
                     data.content.required === true && (value === "" ?
                          (<Card sx={{ backgroundColor: "#F5FFD6", padding:"10px 0" }}>

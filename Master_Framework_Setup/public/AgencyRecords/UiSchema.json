@@ -82,22 +82,22 @@
                             "width":"80",
                             "hide":true
                       },
-                            { "field": "CRNInput",
+                            { "field": "CRN_Number",
                               "width":"80" 
                         },
                             {
-                             "field": "VenndorCodeInput",
+                             "field": "Venndor_Code",
                              "width":"150"
                             },
                             {
-                              "field": "AgencyTypeSelect",
+                              "field": "Agency_Type",
                               "width":"150"},
                             {
-                              "field": "RoleCategorySelect",
+                              "field": "Role_Category",
                               "width":"150"
                             },
                             {
-                                "field": "NameOfAgencyInput",
+                                "field": "Name_Of_Agency",
                                 "width":"150"
                               }
                           ],

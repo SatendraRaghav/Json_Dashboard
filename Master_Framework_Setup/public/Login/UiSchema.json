@@ -22,12 +22,13 @@
                         "label": "Enter your username",
                         "required": true,
                         "type": "text",
-                        "variant": "standard",
+                        "variant": "filled",
                         "size":"normal",
                        "helperText":""
                     },
                     "style": {
-                        "width":"50%"
+                        "width":"50%",
+                        "marginTop":"10vh"
                     }
                 }
             }
@@ -42,12 +43,13 @@
                         "label": "Enter your password",
                         "required": true,
                         "type": "password",
-                        "variant": "standard",
+                        "variant": "filled",
                         "size":"normal",
                        "helperText":""
                     },
                     "style": {
-                        "width":"50%"
+                        "width":"50%",
+                        "margin":"20px auto"
                     }
                 }
             }

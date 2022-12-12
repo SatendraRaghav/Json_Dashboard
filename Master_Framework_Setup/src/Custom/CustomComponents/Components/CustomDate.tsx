@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TextField } from '@mui/material';
-import { Box } from '@mui/system';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
@@ -9,8 +8,6 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 
 const CustomDate = ({ data, value, updateValue }: any) => {
-     const [demoValue, setDemoValue] = React.useState(value);
-
      return (
           <Paper elevation={2} sx={{ width: "80%", ...data.style, backgroundColor: "white", display: "flex", justifyContent: "center", margin: "auto auto" }} >
                {

@@ -1,35 +1,36 @@
 {
   "type":"object",
  "properties": {
-  "fileExample": {
-    "type": "string",
-    "format":"FileInput"
+  "required":["CRN_Number"],
+  "CRN_Number":{
+    "type":"string"
   },
+
     "PortfoliosAgency": {
       "type": "array",
       "title":"Portfolio Agency Category Mapping",
       "items": {
         "type": "object",
         "properties": {
+          "Portfolios":{
+            "type":"string"
+          }
         }
       }
     },
-    "RCUProducts": {
+    "RCU_Products": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "RCUProducts": {
-            "type": "string",
-            "enum": [
-             "no Records"
-            ]
+          "Active": {
+            "type": "string"
           }
         }
       }
     },
     
-    "AgencyAuthorizedSignatures":{
+    "Agency_Authorized_Signatures":{
       "type": "array",
        "items": {
         "type": "object",
@@ -42,11 +43,10 @@
         "items": {
           "type": "object",
           "properties": {
-            
           }
       }
     }, 
-    "AgencyBranchLocationMapping":{ 
+    "Agency_Branch_Location_Mapping":{ 
       "type": "array",
         "title":"Agency Branch Location Mapping",
         "items": {
@@ -67,7 +67,6 @@
     "items": {
       "type": "object",
       "properties": {
-        
       }
   }
 }

@@ -8,14 +8,17 @@
             "option": {
                 "value": {
                     "content": {
-                        "eventName": "LogOut",
-                        "ButtonName":"Log Out"
+                        "eventName": "GoToLoginForm",
+                        "ButtonName":"Go to Login Form"
                     }}
         }},
         {
             "type": "Control",
-            "scope": "#/properties/Box",
+            "scope": "#/properties/BoxDemo",
             "layout":12,
+            "options": {
+                "boxType": true
+              },
             "option": {
                 "value": {
                     "content": {

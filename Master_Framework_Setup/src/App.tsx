@@ -8,7 +8,6 @@ import { renders } from './renders';
 import { JsonSchema } from '@jsonforms/core';
 import { UISchemaElement } from '@jsonforms/core';
 import "./App.css"
-import { Button } from '@mui/material';
 import { DataContext } from './Context';
 
 
@@ -20,6 +19,7 @@ const App = () => {
   const [data, setData] = useState({} as formDataType);
   const [schema, setSchema] = useState<JsonSchema | undefined>(undefined)
   const [UiSchema, setUiSchema] = useState<UISchemaElement| undefined>(undefined)
+  console.log(state.url)
   useEffect(() => {
     // window.sessionStorage.clear();
     const server = location.href ;
