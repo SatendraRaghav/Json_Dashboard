@@ -4,7 +4,7 @@ import { CustomAppbar } from '../Components/CustomAppbar';
 
 const ControlAppbar = (props:any) => {
   
-const data = props.uischema.option.value
+const data = props.uischema.value
   return(
   <CustomAppbar
      Data={data}

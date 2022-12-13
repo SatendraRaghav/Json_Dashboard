@@ -4,7 +4,7 @@ import { CustomButton } from '../Components/CustomButton';
 
 
 const ControlButton = (props:any) => {
-  const data:any = props.uischema.option.value;
+  const data:any = props.uischema.value;
 
   return(
   <CustomButton

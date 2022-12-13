@@ -11,18 +11,10 @@ const CustomDate = ({ data, value, updateValue }: any) => {
      return (
           <Paper elevation={2} sx={{ width: "80%", ...data.style, backgroundColor: "white", display: "flex", justifyContent: "center", margin: "auto auto" }} >
                {
-                    data.content.required === true && (value === "" ?
+                    data.content.required === true && (value === "" &&
                          (<Card sx={{ backgroundColor: "#F5FFD6", padding: "10px 0" }}>
                               <Typography color="error">{`${data.content.label} Can't be Empty !`}</Typography>
-                         </Card>) :
-                         (typeof data.content === "object" && (typeof data.content.customValidate === "object"
-                              && (
-                                   (new RegExp(JSON.parse(JSON.stringify(data.content.customValidate)).logic.slice(1, -1)).test(value) === false && typeof value !== "undefined") && (
-                                        <Card sx={{ backgroundColor: "#F5FFD6", padding: "10px 0" }}>
-                                             <Typography color="error">{`Invalid ${data.content.label}`}</Typography>
-                                        </Card>
-                                   )
-                              )))
+                         </Card>) 
 
                     )
                }

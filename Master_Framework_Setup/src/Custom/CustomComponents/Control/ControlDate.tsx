@@ -3,7 +3,7 @@ import { withJsonFormsControlProps } from '@jsonforms/react';
 import CustomDate from '../Components/CustomDate';
 
 const ControlDate = (props:any) => {
-  const data:any = props.uischema.option.value;
+  const data:any = props.uischema.value;
   
 
   return(

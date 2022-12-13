@@ -4,50 +4,56 @@
         {
             "type": "Control",
             "scope": "#/properties/Appbar",
-            "layout":12,
-            "option": {
-                "value": {
-                    "content": {
-                        "eventName": "LogOut",
-                        "ButtonName":"Log Out"
-                    }}
-        }},
+            "layout": 12,
+            "value": {
+                "content": {
+                    "eventName": "LogOut",
+                    "ButtonName": "Log Out"
+                }
+            }
+        },
         {
             "type": "Control",
             "scope": "#/properties/BackButton",
-            "layout": {"xs":4,"sm":4,"md":3,"lg":3},
-            "option": {
-                "value": {
-                    "content": {
-                        "name": "<< Back",
-                        "variant": "contained",
-                        "color": "info",
-                        "eventName": "BackToAgencyApproveRecords",
-                        "type": "text",
-                        "size": "large"
-                    }
+            "layout": {
+                "xs": 4,
+                "sm": 4,
+                "md": 3,
+                "lg": 3
+            },
+            "value": {
+                "content": {
+                    "name": "<< Back",
+                    "variant": "contained",
+                    "color": "info",
+                    "eventName": "BackToAgencyApproveRecords",
+                    "type": "text",
+                    "size": "large"
                 }
             }
         },
         {
             "type": "Control",
             "scope": "#/properties/EmptyBox",
-            "layout": {"xs":8,"sm":8,"md":9,"lg":9}
+            "layout": {
+                "xs": 8,
+                "sm": 8,
+                "md": 9,
+                "lg": 9
+            }
         },
         {
             "type": "Control",
             "scope": "#/properties/CRN_Number",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "CRN Number",
-                        "type": "number",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "CRN Number",
+                    "type": "number",
+                    "required": true
                 }
             }
         },
@@ -55,15 +61,13 @@
             "type": "Control",
             "scope": "#/properties/Venndor_Code",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Vendor Code",
-                        "type": "number"
-                    }
+            "value": {
+                "content": {
+                    "label": "Vendor Code",
+                    "type": "number"
                 }
             }
         },
@@ -71,21 +75,19 @@
             "type": "Control",
             "scope": "#/properties/Agency_Type",
             "layout": 6,
-            "options":{
-                "selectType":true
+            "options": {
+                "selectType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Agency Type",
-                        "options": [
-                            "NATIONAL",
-                            "MULTICITY",
-                            "SINGLECITY"
-                        ],
-                        "type": "select",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Agency Type",
+                    "options": [
+                        "NATIONAL",
+                        "MULTICITY",
+                        "SINGLECITY"
+                    ],
+                    "type": "select",
+                    "required": true
                 }
             }
         },
@@ -93,20 +95,18 @@
             "type": "Control",
             "scope": "#/properties/Role_Category",
             "layout": 6,
-            "options":{
-                "selectType":true
+            "options": {
+                "selectType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Role Category",
-                        "options": [
-                            "DSA",
-                            "VENDOR"
-                        ],
-                        "type": "select",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Role Category",
+                    "options": [
+                        "DSA",
+                        "VENDOR"
+                    ],
+                    "type": "select",
+                    "required": true
                 }
             }
         },
@@ -114,16 +114,14 @@
             "type": "Control",
             "scope": "#/properties/Name_Of_Agency",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Name of Agency",
-                        "type": "text",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Name of Agency",
+                    "type": "text",
+                    "required": true
                 }
             }
         },
@@ -131,20 +129,18 @@
             "type": "Control",
             "scope": "#/properties/Agency_Identifier",
             "layout": 6,
-            "options":{
-                "selectType":true
+            "options": {
+                "selectType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Agency Indentifier",
-                        "options": [
-                            "CORPORATE",
-                            "RETAIL"
-                        ],
-                        "type": "select",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Agency Indentifier",
+                    "options": [
+                        "CORPORATE",
+                        "RETAIL"
+                    ],
+                    "type": "select",
+                    "required": true
                 }
             }
         },
@@ -152,16 +148,14 @@
             "type": "Control",
             "scope": "#/properties/Pan_Number",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Pan Number",
-                        "type": "text",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Pan Number",
+                    "type": "text",
+                    "required": true
                 }
             }
         },
@@ -169,15 +163,16 @@
             "type": "Control",
             "scope": "#/properties/Agency_Mobile_No.",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Agency Mobile No.",
-                        "type": "number",
-                        "required": true
+            "value": {
+                "content": {
+                    "label": "Agency Mobile No.",
+                    "type": "number",
+                    "required": true,
+                    "customValidate": {
+                        "length": 10
                     }
                 }
             }
@@ -186,14 +181,15 @@
             "type": "Control",
             "scope": "#/properties/Agency_Phone_No.",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Agency Phone Number",
-                        "type": "number"
+            "value": {
+                "content": {
+                    "label": "Agency Phone Number",
+                    "type": "number",
+                    "customValidate": {
+                        "length": 10
                     }
                 }
             }
@@ -202,16 +198,14 @@
             "type": "Control",
             "scope": "#/properties/Agency_E-Mail_ID",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Agency E-Mail ID",
-                        "type": "email",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Agency E-Mail ID",
+                    "type": "email",
+                    "required": true
                 }
             }
         },
@@ -219,13 +213,11 @@
             "type": "Control",
             "scope": "#/properties/Agreement_Exp_Date",
             "layout": 6,
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Agreement Exp. Date",
-                        "type": "date",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Agreement Exp. Date",
+                    "type": "date",
+                    "required": true
                 }
             }
         },
@@ -233,13 +225,11 @@
             "type": "Control",
             "scope": "#/properties/Agreement_Start_Date",
             "layout": 6,
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Agreement Start Date",
-                        "type": "date",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Agreement Start Date",
+                    "type": "date",
+                    "required": true
                 }
             }
         },
@@ -247,13 +237,11 @@
             "type": "Control",
             "scope": "#/properties/First_Agreement_Date",
             "layout": 6,
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "First Agreement Date",
-                        "type": "date",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "First Agreement Date",
+                    "type": "date",
+                    "required": true
                 }
             }
         },
@@ -261,16 +249,14 @@
             "type": "Control",
             "scope": "#/properties/Agency_Main_Contact_Person",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Agency Main Contact Person",
-                        "type": "text",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Agency Main Contact Person",
+                    "type": "text",
+                    "required": true
                 }
             }
         },
@@ -278,20 +264,18 @@
             "type": "Control",
             "scope": "#/properties/Active",
             "layout": 6,
-            "options":{
-                "selectType":true
+            "options": {
+                "selectType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Active",
-                        "options": [
-                            "YES",
-                            "NO"
-                        ],
-                        "type": "radio",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Active",
+                    "options": [
+                        "YES",
+                        "NO"
+                    ],
+                    "type": "radio",
+                    "required": true
                 }
             }
         },
@@ -299,20 +283,18 @@
             "type": "Control",
             "scope": "#/properties/Inactive_Reason",
             "layout": 6,
-            "options":{
-                "selectType":true
+            "options": {
+                "selectType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Inactive_Reason",
-                        "options": [
-                            "FRAUD",
-                            "Agreement Expire",
-                            "Others"
-                        ],
-                        "type": "select"
-                    }
+            "value": {
+                "content": {
+                    "label": "Inactive_Reason",
+                    "options": [
+                        "FRAUD",
+                        "Agreement Expire",
+                        "Others"
+                    ],
+                    "type": "select"
                 }
             }
         },
@@ -320,15 +302,13 @@
             "type": "Control",
             "scope": "#/properties/Inactive_Remark",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Inactive Remark",
-                        "type": "text"
-                    }
+            "value": {
+                "content": {
+                    "label": "Inactive Remark",
+                    "type": "text"
                 }
             }
         },
@@ -336,15 +316,13 @@
             "type": "Control",
             "scope": "#/properties/Additional_Address",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Additional Addresss",
-                        "type": "text"
-                    }
+            "value": {
+                "content": {
+                    "label": "Additional Addresss",
+                    "type": "text"
                 }
             }
         },
@@ -352,14 +330,15 @@
             "type": "Control",
             "scope": "#/properties/Additinal_Mobile_No.",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Additional Mobile Number",
-                        "type": "number"
+            "value": {
+                "content": {
+                    "label": "Additional Mobile Number",
+                    "type": "number",
+                    "customValidate": {
+                        "length": 10
                     }
                 }
             }
@@ -368,15 +347,13 @@
             "type": "Control",
             "scope": "#/properties/Additional_E-Mail_Id",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Additional E-Mail Id",
-                        "type": "email"
-                    }
+            "value": {
+                "content": {
+                    "label": "Additional E-Mail Id",
+                    "type": "email"
                 }
             }
         },
@@ -384,50 +361,44 @@
             "type": "Control",
             "scope": "#/properties/Bank_Account_Number",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Bank Account Number",
-                        "type": "number",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Bank Account Number",
+                    "type": "number",
+                    "required": true
                 }
             }
         },
         {
             "type": "Control",
             "scope": "#/properties/IFSC_Code",
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
             "layout": 6,
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "IFSC Code",
-                        "type": "number",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "IFSC Code",
+                    "type": "number",
+                    "required": true
                 }
             }
         },
         {
             "type": "Control",
             "scope": "#/properties/Bank_Name",
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
             "layout": 6,
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Bank Name",
-                        "type": "text",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Bank Name",
+                    "type": "text",
+                    "required": true
                 }
             }
         },
@@ -435,16 +406,14 @@
             "type": "Control",
             "scope": "#/properties/Registered_Office_Location",
             "layout": 6,
-            "options":{
-                "inputType":true
+            "options": {
+                "inputType": true
             },
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Registered Office Location",
-                        "type": "text",
-                        "required": true
-                    }
+            "value": {
+                "content": {
+                    "label": "Registered Office Location",
+                    "type": "text",
+                    "required": true
                 }
             }
         },
@@ -452,12 +421,10 @@
             "type": "Control",
             "scope": "#/properties/Company_Incorpation_Date",
             "layout": 6,
-            "option": {
-                "value": {
-                    "content": {
-                        "label": "Company Incorpation Date",
-                        "type": "date"
-                    }
+            "value": {
+                "content": {
+                    "label": "Company Incorpation Date",
+                    "type": "date"
                 }
             }
         },
@@ -482,12 +449,10 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Agreement Copy",
-                                        "required": true
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Agreement Copy",
+                                    "required": true
                                 }
                             }
                         },
@@ -500,12 +465,10 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "saveApi": "https://jsonplaceholder.typicode.com/users",
-                                        "label": "The Agreement or Appointment Letter"
-                                    }
+                            "value": {
+                                "content": {
+                                    "saveApi": "https://jsonplaceholder.typicode.com/users",
+                                    "label": "The Agreement or Appointment Letter"
                                 }
                             }
                         },
@@ -518,11 +481,9 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Application Form"
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Application Form"
                                 }
                             }
                         },
@@ -535,11 +496,9 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Due Diligence Report"
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Due Diligence Report"
                                 }
                             }
                         },
@@ -552,12 +511,10 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Brokage Letter",
-                                        "required": true
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Brokage Letter",
+                                    "required": true
                                 }
                             }
                         },
@@ -570,12 +527,10 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Disclosure Letter",
-                                        "required": true
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Disclosure Letter",
+                                    "required": true
                                 }
                             }
                         },
@@ -588,12 +543,10 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "DSA/DMA No Calling Set Up On DMA/DSA Letter Head",
-                                        "required": true
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "DSA/DMA No Calling Set Up On DMA/DSA Letter Head",
+                                    "required": true
                                 }
                             }
                         },
@@ -606,12 +559,10 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "National Do Not Call Letter On Kotak Letter Head",
-                                        "required": true
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "National Do Not Call Letter On Kotak Letter Head",
+                                    "required": true
                                 }
                             }
                         },
@@ -624,11 +575,9 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "RM Visit Report"
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "RM Visit Report"
                                 }
                             }
                         },
@@ -641,11 +590,9 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Pan documents"
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Pan documents"
                                 }
                             }
                         },
@@ -658,11 +605,9 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Cancel Cheque"
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Cancel Cheque"
                                 }
                             }
                         },
@@ -675,11 +620,9 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "CIBIL Report"
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "CIBIL Report"
                                 }
                             }
                         },
@@ -692,11 +635,9 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Other Upload"
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Other Upload"
                                 }
                             }
                         },
@@ -709,11 +650,9 @@
                                 "md": 6,
                                 "lg": 6
                             },
-                            "option": {
-                                "value": {
-                                    "content": {
-                                        "label": "Payout Structure File"
-                                    }
+                            "value": {
+                                "content": {
+                                    "label": "Payout Structure File"
                                 }
                             }
                         }
@@ -735,24 +674,22 @@
                                 {
                                     "type": "Control",
                                     "scope": "#/properties/Portfolios",
-                                    "options":{
-                                        "selectType":true
+                                    "options": {
+                                        "selectType": true
                                     },
                                     "layout": 6,
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Portfolios",
-                                                "options": [
-                                                    "RCU-RCU",
-                                                    "EMM-Emerging Mortgage Market",
-                                                    "PL-Personal Loan",
-                                                    "HL-Home Loan",
-                                                    "BL-Business Loan",
-                                                    "LAP-Loan Against Property"
-                                                ],
-                                                "type": "select"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Portfolios",
+                                            "options": [
+                                                "RCU-RCU",
+                                                "EMM-Emerging Mortgage Market",
+                                                "PL-Personal Loan",
+                                                "HL-Home Loan",
+                                                "BL-Business Loan",
+                                                "LAP-Loan Against Property"
+                                            ],
+                                            "type": "select"
                                         }
                                     }
                                 },
@@ -760,26 +697,24 @@
                                     "type": "Control",
                                     "scope": "#/properties/Portfolios_Agency",
                                     "layout": 6,
-                                    "options":{
-                                        "selectType":true
+                                    "options": {
+                                        "selectType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Portfolios Agency",
-                                                "options": [
-                                                    "ORPORATE DSA",
-                                                    "PLATINUM",
-                                                    "GOLD",
-                                                    "SILVER",
-                                                    "BRONZE",
-                                                    "REFERRAL MODEL",
-                                                    "DSA",
-                                                    "CORPORATE A DSA",
-                                                    "CORPORATE B DSA"
-                                                ],
-                                                "type": "select"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Portfolios Agency",
+                                            "options": [
+                                                "ORPORATE DSA",
+                                                "PLATINUM",
+                                                "GOLD",
+                                                "SILVER",
+                                                "BRONZE",
+                                                "REFERRAL MODEL",
+                                                "DSA",
+                                                "CORPORATE A DSA",
+                                                "CORPORATE B DSA"
+                                            ],
+                                            "type": "select"
                                         }
                                     }
                                 }
@@ -803,18 +738,16 @@
                                 {
                                     "type": "Control",
                                     "scope": "#/properties/RCU_Products",
-                                    "options":{
-                                        "selectType":true
+                                    "options": {
+                                        "selectType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Active",
-                                                "options": [
-                                                    "No Data"
-                                                ],
-                                                "type": "select"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Active",
+                                            "options": [
+                                                "No Data"
+                                            ],
+                                            "type": "select"
                                         }
                                     }
                                 }
@@ -844,15 +777,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Signature File",
-                                                "saveApi": "https://jsonplaceholder.typicode.com/users"
-                                            },
-                                            "style": {
-                                                "margin": "auto"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Signature File",
+                                            "saveApi": "https://jsonplaceholder.typicode.com/users"
+                                        },
+                                        "style": {
+                                            "margin": "auto"
                                         }
                                     }
                                 },
@@ -865,15 +796,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Vendor Code",
-                                                "type": "number"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Vendor Code",
+                                            "type": "number"
                                         }
                                     }
                                 },
@@ -886,15 +815,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Signature Designation",
-                                                "type": "text"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Signature Designation",
+                                            "type": "text"
                                         }
                                     }
                                 }
@@ -924,16 +851,14 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Name",
-                                                "type": "text",
-                                                "required":true
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Name",
+                                            "type": "text",
+                                            "required": true
                                         }
                                     }
                                 },
@@ -946,15 +871,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Address1",
-                                                "type": "text"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Address1",
+                                            "type": "text"
                                         }
                                     }
                                 },
@@ -967,15 +890,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Address2",
-                                                "type": "text"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Address2",
+                                            "type": "text"
                                         }
                                     }
                                 },
@@ -988,15 +909,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Address3",
-                                                "type": "text"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Address3",
+                                            "type": "text"
                                         }
                                     }
                                 },
@@ -1009,15 +928,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "State",
-                                                "type": "text"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "State",
+                                            "type": "text"
                                         }
                                     }
                                 },
@@ -1030,15 +947,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "CIN Number",
-                                                "type": "number"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "CIN Number",
+                                            "type": "number"
                                         }
                                     }
                                 },
@@ -1051,15 +966,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "GSTIN",
-                                                "type": "number"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "GSTIN",
+                                            "type": "number"
                                         }
                                     }
                                 },
@@ -1109,15 +1022,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Name",
-                                                "type": "text"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Name",
+                                            "type": "text"
                                         }
                                     }
                                 },
@@ -1130,15 +1041,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Position Type",
-                                                "type": "text"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Position Type",
+                                            "type": "text"
                                         }
                                     }
                                 },
@@ -1151,14 +1060,12 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "dateType":true
+                                    "options": {
+                                        "dateType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "D.O.B"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "D.O.B"
                                         }
                                     }
                                 },
@@ -1171,14 +1078,15 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
-                                      },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Mobile Number",
-                                                "type": "number"
+                                    "options": {
+                                        "inputType": true
+                                    },
+                                    "value": {
+                                        "content": {
+                                            "label": "Mobile Number",
+                                            "type": "number",
+                                            "customValidate": {
+                                                "length": 10
                                             }
                                         }
                                     }
@@ -1192,15 +1100,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Email",
-                                                "type": "email"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Email",
+                                            "type": "email"
                                         }
                                     }
                                 },
@@ -1213,15 +1119,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Address",
-                                                "type": "text"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Address",
+                                            "type": "text"
                                         }
                                     }
                                 },
@@ -1234,15 +1138,13 @@
                                         "md": 4,
                                         "lg": 4
                                     },
-                                    "options":{
-                                        "inputType":true
+                                    "options": {
+                                        "inputType": true
                                     },
-                                    "option": {
-                                        "value": {
-                                            "content": {
-                                                "label": "Pan Number",
-                                                "type": "number"
-                                            }
+                                    "value": {
+                                        "content": {
+                                            "label": "Pan Number",
+                                            "type": "number"
                                         }
                                     }
                                 },
@@ -1266,21 +1168,20 @@
             "type": "Control",
             "scope": "#/properties/AgencyButton",
             "layout": 12,
-            "option": {
-                "value": {
-                    "content": {
-                        "name": "Sent To Approver",
-                        "variant": "contained",
-                        "color": "info",
-                        "eventName": "AgencySendForApprover",
-                        "type": "submit",
-                        "size": "large"
-                    },
-                    "style": {
-                        "width": "70%",
-                        "margin":"auto auto"
+            "value": {
+                "content": {
+                    "name": "Sent To Approver",
+                    "variant": "contained",
+                    "color": "info",
+                    "eventName": "AgencySendForApprover",
+                    "type": "submit",
+                    "size": "large"
+                },
+                "style": {
+                    "width": "70%",
+                    "margin": "auto auto"
                 }
             }
-        }}
+        }
     ]
 }

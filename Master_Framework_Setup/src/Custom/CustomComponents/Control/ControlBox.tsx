@@ -4,7 +4,7 @@ import CustomBox from '../Components/CustomBox';
 
 const ControlBox = (props:any) => {
   
-const data = props.uischema.option.value
+const data = props.uischema.value
   return(
   <CustomBox
      data={data}

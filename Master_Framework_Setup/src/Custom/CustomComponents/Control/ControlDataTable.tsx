@@ -3,7 +3,7 @@ import { withJsonFormsControlProps } from '@jsonforms/react';
 import DataTable from '../Components/DataTable';
 
 const ControlDataTable = (props:any) => {
-  const data:any = props.uischema.option.value;
+  const data:any = props.uischema.value;
 
   return(
   <DataTable

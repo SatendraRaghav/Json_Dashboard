@@ -3,7 +3,7 @@ import { withJsonFormsControlProps } from '@jsonforms/react';
 import CustomSelect from '../Components/CustomSelect';
 
 const ControlSelect = (props:any) => {
-  const data:any = props.uischema.option.value;
+  const data:any = props.uischema.value;
   return(
   <CustomSelect
      data={data}

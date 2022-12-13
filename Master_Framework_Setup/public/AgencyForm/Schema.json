@@ -1,9 +1,11 @@
 {
   "type":"object",
  "properties": {
-  "required":["CRN_Number"],
+
   "CRN_Number":{
-    "type":"string"
+    "type":"string",
+    "maximun":5,
+    "minimum": 4
   },
 
     "PortfoliosAgency": {
@@ -70,5 +72,6 @@
       }
   }
 }
-}
+},
+"required":["CRN_Number"]
 }
